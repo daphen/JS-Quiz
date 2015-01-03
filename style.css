@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'sackersGothic';
+    src: url('fonts/atsackersheavygothic-webfont.eot');
+    src: url('fonts/atsackersheavygothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/atsackersheavygothic-webfont.woff2') format('woff2'),
+         url('fonts/atsackersheavygothic-webfont.woff') format('woff'),
+         url('fonts/atsackersheavygothic-webfont.ttf') format('truetype'),
+         url('fonts/atsackersheavygothic-webfont.svg#sackers_gothic_heavyheavy') format('svg');
+}
+body {
+	background-color: #4A565F;
+	background-position: center top;
+	background-repeat: no-repeat;
+	font-family: sackersGothic;
+}
+h1 {
+    font-size: 3.5em;
+}
+.welcome-screen {
+	color: #434240;
+	font-weight: normal;
+	letter-spacing:1pt;
+	word-spacing:0pt;
+	font-size:2em;
+	line-height:1;
+    text-align: center;
+}
+.game {
+	margin: auto;
+	max-width: 1700px;
+}
+.question {
+	text-align: center;
+	padding: 20px 10px;
+	color: #d6d7d9;
+	font-weight: normal;
+	letter-spacing:0pt;
+	word-spacing:1pt;
+	font-size:3em;
+	line-height:1.2;
+	background: -webkit-radial-gradient(#d6d7d9 30%, #909495 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+hr {
+	display: block;	padding: 0;
+	margin: 8px auto;
+	height: 0;
+	width: 50%;
+	max-height: 0;
+	font-size: 1px;
+	line-height: 0;
+	clear: both;
+	border: none;
+	border-top: 1px solid #cfc7b0;
+	border-bottom: 1px solid #b3a686;
+}
+.guess {
+	border: solid black 1px;
+	padding: 10px 20px 6px 20px;
+	margin: 1px 11px;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #434240;
+	font-weight: normal;
+	letter-spacing:1pt;
+	word-spacing:0pt;
+	font-size:2em;
+	line-height:1;
+	background: #d6d7d9; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q2ZDdkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iIzkwOTQ5NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5MDk0OTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #d6d7d9 0%, #909495 47%, #909495 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6d7d9), color-stop(47%,#909495), color-stop(100%,#909495)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d6d7d9 0%,#909495 47%,#909495 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d6d7d9 0%,#909495 47%,#909495 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d6d7d9 0%,#909495 47%,#909495 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #d6d7d9 0%,#909495 47%,#909495 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d7d9', endColorstr='#909495',GradientType=0 ); /* IE6-8 */
+}
+.guess:hover {
+	cursor: pointer;
+}
+
+.answers {
+	text-align: center;
+	width: 100%;
+	margin-top: 50px;
+}
+.headline {
+	margin-top: 15%;
+	text-align: center;
+	padding: 20px 10px;
+	color: #d6d7d9;
+	font-weight: normal;
+	letter-spacing:3pt;
+	word-spacing:1pt;
+	line-height:1;
+	background: -webkit-radial-gradient(#d6d7d9 30%, #909495 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.button {
+	margin-top: 2em;
+	border: solid black 1px;
+	padding: 25px 15px 20px 15px;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #434240;
+	font-weight: normal;
+	letter-spacing:1pt;
+	word-spacing:0pt;
+	font-size:1.5em;
+	line-height:1;
+	text-align: center;
+	background: #d6d7d9; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q2ZDdkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iIzkwOTQ5NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5MDk0OTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #d6d7d9 0%, #909495 47%, #909495 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6d7d9), color-stop(47%,#909495), color-stop(100%,#909495)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d6d7d9 0%,#909495 47%,#909495 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d6d7d9 0%,#909495 47%,#909495 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d6d7d9 0%,#909495 47%,#909495 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #d6d7d9 0%,#909495 47%,#909495 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d7d9', endColorstr='#909495',GradientType=0 ); /* IE6-8 */
+}
+.button:hover {
+	cursor: pointer;
+}
+.result-screen {
+	width: 100%;
+	text-align: center;
+    color: white;
+	display: none;
+	overflow: hidden;
+}
+.congratulations {
+	font-size: 3.5em
+}
+.wrong-guess {
+	border: solid #000 2px;
+	margin: 0 10px;
+	color: #fff;
+	background: #c91c0c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c91c0c 0%, #a01609 47%, #781108 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#781108), color-stop(47%,#781108), color-stop(100%,#781108)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c91c0c 0%,#a01609 47%,#781108 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c91c0c 0%,#a01609 47%,#781108 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c91c0c 0%,#a01609 47%,#781108 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c91c0c 0%,#a01609 47%,#781108 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d7d9', endColorstr='#781108',GradientType=0 ); /* IE6-8 */
+}
+.correct-guess {
+	border: solid green 2px;
+	margin: 0 10px;
+	color: white;
+	background: #5bab18;
+	background: -moz-linear-gradient(top,  #5bab18 0%, #4d8f13 47%, #37650d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#37650d), color-stop(47%,#37650d), color-stop(100%,#37650d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5bab18 0%,#4d8f13 47%,#37650d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5bab18 0%,#4d8f13 47%,#37650d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5bab18 0%,#4d8f13 47%,#37650d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5bab18 0%,#4d8f13 47%,#37650d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bab18', endColorstr='#37650d',GradientType=0 ); /* IE6-8 */
+}
+/*
+==============================================
+Animations
+==============================================
+*/
+
+.shake {
+    -webkit-animation-name: shake;
+        animation-name: shake;
+		animation-duration: 0.4s;	
+	-webkit-animation-duration: 0.4s;
+
+		animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-6px, 0, 0);
+            transform: translate3d(-6px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(6px, 0, 0);
+            transform: translate3d(6px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-6px, 0, 0);
+            transform: translate3d(-6px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(6px, 0, 0);
+            transform: translate3d(6px, 0, 0);
+  }
+}
+
+.tada {
+	-webkit-animation-name: tada;
+		animation-name: tada;
+		animation-duration: 0.8s;	
+	-webkit-animation-duration: 0.8s;
+
+		animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
